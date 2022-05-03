@@ -1,0 +1,47 @@
+@import "../../../css/Global/Vars.scss";
+
+.checkout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .content {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    padding-top: 87px;
+    padding-bottom: 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    table {
+      width: 100%;
+      height: fit-content;
+      text-align: left;
+      td {
+        padding: 8px;
+      }
+    }
+    .button-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      button {
+        padding: 14px 36px;
+        background-color: transparent;
+        border: 1px solid $bc-light-green;
+        height: fit-content;
+        color: $bc-light-green;
+        font-weight: bold;
+        border-radius: 18px;
+        transition: all 0.4s;
+      }
+      button:hover {
+        color: white;
+        background-color: $bc-light-green;
+      }
+    }
+  }
+}

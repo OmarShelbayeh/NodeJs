@@ -1,0 +1,138 @@
+@import "../../../css/Global/Vars.scss";
+
+.wrapper {
+  background: url("../../../Images/cover.webp");
+  min-height: 100vh;
+  filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.landing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    .intro {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .container {
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        width: 80%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        flex-direction: column;
+      }
+    }
+  }
+  .shop {
+    background-color: $bc-gray-1;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    .content {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      position: relative;
+      color: $bc-gray-3 !important;
+      padding-bottom: 12px;
+      .menu {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .item {
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+          align-items: center;
+          a {
+            padding: 2px;
+            border: 1px solid $bc-gray-3;
+            border-radius: 4px;
+            .inside {
+              padding: 8px;
+              background-color: transparent;
+              border-radius: 4px;
+              transition: all 0.4s;
+            }
+          }
+          a:hover,
+          .active {
+            .inside {
+              background-color: $bc-gray-3;
+            }
+          }
+        }
+      }
+      .body {
+        top: 0;
+        left: 25%;
+        height: 90vh;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        flex-wrap: wrap;
+        .item-container {
+          @extend %element-container;
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          img {
+            width: 100%;
+            border-radius: 12px;
+          }
+          .price {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-weight: bold;
+              color: $bc-light-green;
+            }
+            a {
+              color: $bc-light-green;
+            }
+            a:hover {
+              color: $bc-gray-3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

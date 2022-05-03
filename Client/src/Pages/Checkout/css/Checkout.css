@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+.checkout {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.checkout .content {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  padding-top: 87px;
+  padding-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.checkout .content table {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: left;
+}
+
+.checkout .content table td {
+  padding: 8px;
+}
+
+.checkout .content .button-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.checkout .content .button-wrapper button {
+  padding: 14px 36px;
+  background-color: transparent;
+  border: 1px solid #a7d09c;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #a7d09c;
+  font-weight: bold;
+  border-radius: 18px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.checkout .content .button-wrapper button:hover {
+  color: white;
+  background-color: #a7d09c;
+}
+/*# sourceMappingURL=Checkout.css.map */

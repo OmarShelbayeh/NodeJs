@@ -1,0 +1,40 @@
+@import "../../../css/Global/Vars.scss";
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background: $bc-gray-2;
+  position: fixed;
+  z-index: 2;
+
+  //   background-color: white;
+  .content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      img {
+        max-height: 50px;
+      }
+    }
+    .control {
+      display: flex;
+      align-items: center;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: black;
+      }
+      a:hover {
+        color: $bc-gray-3;
+      }
+    }
+  }
+}

@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+.landing .shop .content .body .item-container {
+  padding: 24px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 32px rgba(223, 225, 226, 0.5);
+          box-shadow: 0px 0px 32px rgba(223, 225, 226, 0.5);
+  border-radius: 36px;
+}
+
+.wrapper {
+  background: url("../../../Images/cover.webp");
+  min-height: 100vh;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.landing {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.landing .body .intro {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.landing .body .intro .container {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  width: 80%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .shop {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.landing .shop .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  color: #636363 !important;
+  padding-bottom: 12px;
+}
+
+.landing .shop .content .menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.landing .shop .content .menu .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .shop .content .menu .item a {
+  padding: 2px;
+  border: 1px solid #636363;
+  border-radius: 4px;
+}
+
+.landing .shop .content .menu .item a .inside {
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.landing .shop .content .menu .item a:hover .inside,
+.landing .shop .content .menu .item .active .inside {
+  background-color: #636363;
+}
+
+.landing .shop .content .body {
+  top: 0;
+  left: 25%;
+  height: 90vh;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.landing .shop .content .body .item-container {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.landing .shop .content .body .item-container img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.landing .shop .content .body .item-container .price {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landing .shop .content .body .item-container .price p {
+  font-weight: bold;
+  color: #a7d09c;
+}
+
+.landing .shop .content .body .item-container .price a {
+  color: #a7d09c;
+}
+
+.landing .shop .content .body .item-container .price a:hover {
+  color: #636363;
+}
+/*# sourceMappingURL=Landing.css.map */
